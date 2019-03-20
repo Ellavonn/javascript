@@ -1,6 +1,0 @@
-13/03/2019
-Stella Njeri.
-The Difference between Null and Undefined-
-Undefined means a variable has been declared but has not yet been assigned to a value.
-Null on the other hand, is an empty or non- existent value. And null must be assigned. it is an assignment value which can be assigned to variables as a representation of no value. 
-  
