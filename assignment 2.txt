@@ -1,0 +1,15 @@
+
+          Explain what is Declaration, Definition and Initialization in Java Script.
+
+
+
+1.	Declaration: means creating a variable with var as keyword. After the declaration, the variable has no value. So, it declaring simply means you are telling the compiler to just register the variable and you are going to use it in future.
+
+                               Example: var Name;
+
+2.	Definition means: assigning a specific value to a variable. You declare as well as allocate some value to that variable.
+
+3.	Initialization means: assigning an initial value to a variable.
+                               Example: var Name=”Stella Njeri”
+                                 “Stella Njeri” being initial value
+
