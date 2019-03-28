@@ -1,4 +1,4 @@
-
+	
           Explain what is Declaration, Definition and Initialization in Java Script.
 
 
@@ -7,7 +7,7 @@
 
                                Example: var Name;
 
-2.	Definition means: assigning a specific value to a variable. You declare as well as allocate some value to that variable.
+2.	Definition means: You declare as well as allocate some value to that variable.
 
 3.	Initialization means: assigning an initial value to a variable.
                                Example: var Name=”Stella Njeri”
