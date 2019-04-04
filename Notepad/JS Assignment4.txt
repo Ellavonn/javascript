@@ -1,0 +1,88 @@
+1.Write a program to calculate purchases from a kiosk. For e.g. given the fruit name 'orange' the program should fetch its price (30.00) and multiply with the quantity requested (2) and return total cost in this printed format (2 Oranges for KES 60.00). 
+
+
+function calculateFruitCost(fruitName,quantity) {
+
+	var fruitsList = { fruitName:["oranges","apples","pineapples","guavas","pawpaws","mangoes","melons"], price: [10,30,60,20,50,25,100] }
+
+	for(var i=0; i<=6; i++) {
+
+		var fruitName=fruitsList.fruitName[i]
+
+		var price=fruitsList.price[i]
+
+		var total_cost=quantity*price
+
+		console.log(quantity+" "+fruitName+" "+"for KES"+" "+total_cost)
+
+    }
+
+}
+
+
+
+calculateFruitCost("orange",2)
+
+2 oranges for KES 20
+2 apples for KES 60
+
+2 pineapples for KES 120
+
+2 guavas for KES 40
+
+2 pawpaws for KES 100
+
+2 mangoes for KES 50
+
+2 melons for KES 200
+
+
+
+			OR
+				
+
+function calculateFruitCost(fruitName,quantity) {
+
+	var fruitsList = { fruitName:["oranges","apples","pineapples","guavas","pawpaws","mangoes","melons"], price: [10,30,60,20,50,25,100] }
+
+	var i = 0;
+
+	while(i<=6) {
+
+		var fruitName=fruitsList.fruitName[i]
+
+		var price=fruitsList.price[i]
+
+		var total_cost=quantity*price
+
+		return(quantity+" "+fruitName+" "+"for KES"+" "+total_cost)
+
+    }
+
+}
+
+
+
+calculateFruitCost("orange",2)
+
+"2 oranges for KES 20"
+
+calculateFruitCost("pineapples",4)
+
+"4 oranges for KES 40"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
