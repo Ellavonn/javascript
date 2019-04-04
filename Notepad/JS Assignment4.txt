@@ -3,7 +3,7 @@
 
 function calculateFruitCost(fruitName,quantity) {
 
-	var fruitsList = { fruitName:["oranges","apples","pineapples","guavas","pawpaws","mangoes","melons"], price: [10,30,60,20,50,25,100] }
+	var fruitsList = { fruitName:["oranges","apples","pineapples","grapes","berry","mangoes","kiwi"], price: [10,30,60,20,50,25,100] }
 
 	for(var i=0; i<=6; i++) {
 
@@ -28,61 +28,14 @@ calculateFruitCost("orange",2)
 
 2 pineapples for KES 120
 
-2 guavas for KES 40
+2 grapes for KES 40
 
-2 pawpaws for KES 100
+2 berry for KES 100
 
 2 mangoes for KES 50
 
-2 melons for KES 200
+2 kiwi for KES 200
 
 
 
-			OR
-				
-
-function calculateFruitCost(fruitName,quantity) {
-
-	var fruitsList = { fruitName:["oranges","apples","pineapples","guavas","pawpaws","mangoes","melons"], price: [10,30,60,20,50,25,100] }
-
-	var i = 0;
-
-	while(i<=6) {
-
-		var fruitName=fruitsList.fruitName[i]
-
-		var price=fruitsList.price[i]
-
-		var total_cost=quantity*price
-
-		return(quantity+" "+fruitName+" "+"for KES"+" "+total_cost)
-
-    }
-
-}
-
-
-
-calculateFruitCost("orange",2)
-
-"2 oranges for KES 20"
-
-calculateFruitCost("pineapples",4)
-
-"4 oranges for KES 40"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+			
