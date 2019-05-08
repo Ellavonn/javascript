@@ -1,0 +1,22 @@
+let user={
+  name:"Stella Njeri",
+  years:23
+   
+};
+let{name,years:age,isStudent="false"} =user;
+console.log(name)
+console.log(age)
+console.log(isStudent)
+
+let ask = (question, yes, no) => {
+  if (confirm(question)) yes()
+  else no();
+}
+
+ask(
+  "Do you agree?",
+  function() { alert("You agreed."); },
+  function() { alert("You canceled the execution."); }
+);
+
+
