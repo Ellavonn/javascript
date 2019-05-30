@@ -1,0 +1,109 @@
+class Mkulima {
+  
+  constructor() {
+    this.farms = [];
+    this.vendors = [];
+    this.products = [];
+    this.orders = [];
+  }
+  
+  addFarm(farmId, name, farmer, phone, address) {
+   let farm = {
+     farmId:farmId, 
+     name:name, 
+     farmer:farmer, 
+     phone:phone, 
+     address:address,
+ 
+  }
+  this.farms.push(farm);
+}
+  removeFarm(farmId){ 
+   let farm = this.getFarm(farmId);
+   let myIndex = this.farms.indexOf(farm);
+   this.farms.splice(myIndex, 1); 
+       
+   }
+  updateFarm(farmId, name, farmer, phone, address) {
+   let farm = this.getFarm(farmId);
+   let myIndex = this.farms.indexOf(farm);
+   this.farms[myIndex] = {farmId:farmId, name:name, farmer:farmer, phone:phone, address:address}
+  
+  }
+  
+    
+  
+  getFarm(farmId){
+    for (var i=0; i<this.farms.length; i++) {
+     let farm = this.farms[i];
+     if (farm.farmId = farmId){
+       return farm;
+     }
+  }
+  }
+  addVendor(vendorId, name, phone){
+    let vendor = {
+      vendorId:vendorId,
+      name:name, 
+      phone:phone
+  }
+  
+    this.vendors.push(vendor); 
+    
+    }
+ 
+  removeVendor(vendorId){
+   
+    let vendor = this.getVendor(vendorId);
+    let myIndex = this.vendors.indexOf(vendor);
+    this.vendors.splice(myIndex, 101);
+  
+}
+  updateVendor( vendorId, name, phone){ 
+   let vendor = this.getVendor(vendorId);
+   let myIndex = this.vendors.indexOf(vendor);
+   this.farms[myIndex] = {vendorId:vendorId, name:name, phone:phone,}
+    
+    
+  }
+  getVendor(vendorId){
+   
+    for (var i=0; i<this.vendors.length; i++) {
+      let vendor = this.vendors[i];
+      if (vendor.vendorId = vendorId) {
+        return vendor;
+      }
+    }
+    
+  }
+  addProduct(productId, name, price){
+    let product = {
+      productId:productId,
+      name:name,
+      price:price,
+    }
+    this.products.push(product);
+  }
+  
+  removeProduct(productId){
+    let product = this.getproduct(productId);
+    let myIndex = this.products.indexof(product)
+    this.products.splice(myIndex,101);
+  }
+  
+  updateProduct( productId, name, price){
+    let product = this.getProduct(productId);
+    let myIndex = this.products.indexof(product);
+    this.farms[myIndex]={productId:productId,name:name,price:price}
+  }
+  
+  getProduct(productId){
+    for (var i=0; i<this.products.length; i++) {
+      let product = this.products[i];
+      if (product.productId=productId){
+        return product;
+      }
+    }
+    
+  }
+ 

@@ -1,0 +1,52 @@
+class Mkulima {
+
+
+
+constructor() {
+
+this.farms = [];
+
+this.vendors = [];
+
+this.products = [];
+
+this.orders = [];
+
+}
+addVendor(vendorId,name,phone){
+  this.vendors.push(vendorId);
+  this.vendors.push(name);
+  this.vendors.push(phone);
+  
+}
+  removeVendor(vendorId){
+    if (this.vendors[0]===vendorId){
+      this.vendors=[]
+      
+    }
+    
+  }
+  updateVendor(vendorId,name,phone){
+    this.vendors.push(vendorId);
+    this.vendors.push(name);
+    this.vendors.push(phone);
+    
+}
+  getVendor(vendorId){
+    if(this.vendors[0]== vendorId){
+      console.log(this.vendors);
+    }
+    else{
+      console.log("The vendors does not exist")
+    }
+      
+  }
+}
+let vendor1 = new Mkulima();
+vendor1.addVendor("278","Stella","0713174435");
+ vendor1.getVendor("278");
+
+vendor1.removeVendor("278");
+vendor1.getVendor("278");
+
+

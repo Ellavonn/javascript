@@ -1,0 +1,159 @@
+class MumMboga {
+  
+  constructor() {
+    
+    this.products = [];
+    this.carts = [];
+    this.orders = [];
+    this.customers  = [];
+  }
+  addProduct(productId,name,price,quantity){
+    this.products.push(productId);
+    this.products.push(name);
+    this.products.push(price);
+    this.products.push(quantity);
+    
+  }
+    removeProduct(productId){
+      
+      if (this.products[0]===productId){
+       this.products=[]
+       
+      }
+     
+ }
+  updateProduct(productId, name, price, quantity){
+    this.products.push(productId);
+    this.products.push(name);
+    this.products.push(price);
+    this.products.push(quantity);
+    
+  }
+  getProduct(productId){
+    if(this.products[0]== productId){
+      console.log(this.products);
+    }
+    else{
+      console.log("the product requested for are not available at the moment")
+    }
+  }
+  
+}
+let product1= new MumMboga();
+product1.addProduct("777","stella","0713174435");
+product1.getProduct("777");
+
+product1.removeProduct("777");
+product1.getProduct("777");
+
+
+
+class MumMboga {
+  
+  constructor() {
+    
+    this.products = [];
+    this.carts = [];
+    this.orders = [];
+    this.customers  = [];
+  }
+  
+  addToCart(cartId, product, orderQuantity, customerId){
+    
+    this.carts.push(cartId);
+    this.carts.push(product);
+    this.carts.push(orderQuantity);
+    this.carts.push(customerId);
+    
+  }
+  
+  removeFromCart(productId){
+    if (this.carts[0]===productId){
+       console.log(this.carts);
+    }
+    
+    else
+      console.log("The item you have selected is not in the cart")
+      }
+}
+let cart1= new MumMboga();
+ cart1.addToCart("777","stella","0713174435");
+ cart1.addToCart("777");
+
+cart1.removeFromCart("777");
+cart1.addToCart("777");
+
+
+
+class MumMboga {
+  
+  constructor() {
+    
+    this.products = [];
+    this.carts = [];
+    this.orders = [];
+    this.customers  = [];
+  }
+  createOrder(orderId){
+    
+    this.orders.push(orderId);
+   
+  }
+  cancelOrder(orderId){
+    
+  if (this.orders[0]===orderId){
+    console.log(this.orders);
+    
+  }
+  
+  else{
+    
+    console.log("Your order was cancelled")
+  }
+}
+}
+
+class MumMboga {
+  
+  constructor() {
+    this.products = [];
+    this.carts = [];
+    this.orders = [];
+    this.customers  = [];
+  }
+addCustomer(customerId,name,email,address){
+    this.customers.push(customerId);
+    this.customers.push(name);
+    this.customers.push(email);
+    this.customers.push(address);
+    
+}
+   removeCustomer(customerId){
+    if (this.customers[0]===customerId){
+      this.customers=[]
+      
+    
+}
+   }
+    updateCustomer(customerId, name, email,address){
+    this.customers.push(customerId);
+    this.customers.push(name);
+    this.customers.push(email);
+    this.customers.push(address);
+}
+   getCustomer(CustomerId){
+    if(this.customers[0]== CustomerId){
+      console.log(this.customers);
+    }
+    else{
+      console.log("The customer you are looking for is")
+    }
+     }
+}
+let customer1 = new Mkulima();
+customer1.addCustomer("777","Stella","0713174435");
+customer1.getCustomer("777");
+
+customer1.removeProduct("777");
+customer1.getcustomer("777");
+

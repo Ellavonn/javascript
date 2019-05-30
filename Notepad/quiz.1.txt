@@ -1,0 +1,57 @@
+class Mkulima {
+
+
+
+constructor() {
+
+this.farms = [];
+
+this.vendors = [];
+
+this.products = [];
+
+this.orders = [];
+
+}
+addFarm(farmId,name,farmer,phone,address){
+  this.farms.push(farmId);
+  this.farms.push(name);
+  this.farms.push(phone);
+  this.farms.push(address);
+}
+  removeFarm(farmId){
+    if (this.farms[0]===farmId){
+      this.farms=[]
+      
+    }
+    
+  }
+  updateFarm(farmId,name,farmer,address){
+    this.farms.push(farmId);
+    this.farms.push(name);
+    this.farms.push(farmer);
+    this.farms.push(address);
+}
+  getFarms(farm_id){
+    if(this.farms[0]== farm_id){
+      console.log(this.farms);
+    }
+    else{
+      console.log("The farm does not exist")
+    }
+      
+  }
+}
+let farm1 = new Mkulima();
+farm1.addFarm("278","Stella","Njeri","0713174435","279");
+// farm1.getFarms("278");
+
+farm1.removeFarm("278");
+farm1.getFarms("278");
+
+
+
+  
+
+
+    

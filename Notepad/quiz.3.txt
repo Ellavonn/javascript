@@ -1,0 +1,52 @@
+class Mkulima {
+
+
+
+constructor() {
+
+this.farms = [];
+
+this.vendors = [];
+
+this.products = [];
+
+this.orders = [];
+
+}
+addProduct(productId,name,phone){
+  this.products.push(productId);
+  this.products.push(name);
+  this.products.push(phone);
+  
+}
+  removeProduct(productId){
+    if (this.products[0]===productId){
+      this.products=[]
+      
+    }
+    
+  }
+  updateProduct(productId,name,phone){
+    this.products.push(productId);
+    this.products.push(name);
+    this.products.push(phone);
+    
+}
+  getProduct(productId){
+    if(this.products[0]== productId){
+      console.log(this.products);
+    }
+    else{
+      console.log("The products do not exist")
+    }
+      
+  }
+}
+let product1 = new Mkulima();
+product1.addProduct("278","Stella","0713174435");
+ product1.getProduct("278");
+
+product1.removeProduct("278");
+product1.getProduct("278");
+
+
