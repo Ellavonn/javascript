@@ -1,0 +1,25 @@
+var s = document.getElementById("title");
+s.style.color="green";
+
+function changeColor(){
+  s.style.color = s.style.color == "green"?"silver":"green";
+  
+}
+setInterval(changeColor,1000);
+
+var m = document.getElementsByClassName("key1");
+for (i = 0; i < m.length; i++){
+  m[i].addEventListener("click",function(){
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+      
+    }
+    else{
+      content.style.display = "block";
+    }
+    
+    });
+  }
+
